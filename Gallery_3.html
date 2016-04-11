@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="scriptSpiders.js"></script>
+<link rel="stylesheet" src="http://whois.domaintools.com/images/css/imports.min.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Документ без названия</title>
+
+<style>
+.scroll {
+ position: relative;
+ height: 20em;
+ padding: 0 4em;
+ line-height: 20em;
+ }
+.scroll input {
+ display: none;
+}
+.scroll div {
+ height: 100%;
+ overflow: hidden;
+ white-space: nowrap;
+ word-wrap: normal;
+ font-size: 0;
+}
+
+.scroll img {
+ position: relative;
+ right: 0em;
+ width: 522px;
+ height: 80%;
+ transition: .5s;
+  margin-left: 35px;
+ margin-right: 35px;
+ display:inline-block;
+ vertical-align:middle
+}
+.scroll img:hover {
+box-shadow: 0px 0px 58px 13px #b0fae1;	
+transform:scale(1.25,1.25); z-index:10;
+}
+.scroll label {
+ cursor: pointer;
+ font-weight: 600;
+ font-size: 6em;
+ }
+.scroll input:nth-of-type(1):checked ~ label:nth-of-type(2):after,
+.scroll input:nth-of-type(2):checked ~ label:nth-of-type(3):after {
+ content: "\3009";
+ position: absolute;
+ right: -0.3em;
+}
+.scroll input:nth-of-type(2):checked ~ label:nth-of-type(1):after,
+.scroll input:nth-of-type(3):checked ~ label:nth-of-type(2):after {
+ content: "\3008";
+ position: absolute;
+ left: -0.3em;
+}
+
+.scroll input:nth-of-type(2):checked ~ div img {right: 100%;}
+.scroll input:nth-of-type(3):checked ~ div img {right: 200%;}
+#spiders {
+position:absolute;
+top:0; left:0;
+width:100%; max-width:100%;
+z-index:-1;
+}
+.w-btn {color: #1C756A; box-shadow: 0 0 0 2px #1C756A inset; position:relative; text-decoration:none;}
+.w-btn {padding: 10px 30px; border-radius: 5px; transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;}
+.w-btn {font-weight: bold; text-transform: uppercase; font-family: "Open Sans", sans-serif;}
+.w-btn:hover {color:#fff}
+.w-btn::before {background-color: #1C756A; border-radius: 5px; content: ''; height:0; position:absolute; transition: height 0.3s; top: 0;
+left: 0; right: 0; color:#fff; z-index:-1; overflow:hidden}
+.w-btn:hover::before {height:100%; color:#fff}
+</style>
+</head>
+<body style="margin:0; padding:0">
+<header style="padding:0"> <canvas id="spiders"></canvas></header>
+<div class="scroll">
+
+<input type="radio" id="0" name="raz" checked="checked"/>
+<input type="radio" id="1" name="raz"/>
+<input type="radio" id="2" name="raz"/>
+
+<label for="0"></label>
+<label for="1"></label>
+<label for="2"></label>
+
+<div>
+<a href="https://nnmclub.to"><img src="https://c1.staticflickr.com/5/4133/4945573963_9d45b7867e_b.jpg" alt="pic1"/></a>
+<a href="https://thepiratebay.cr"><img src="http://wallpapershome.com/images/pages/pic_h/5497.jpg" alt="pic2"/></a>
+<a href="https://flibusta.is"><img src="http://www.vmir.su/uploads/posts/1409063181_061.jpg" alt="pic3"/></a>
+<img src="http://www.silverstationvideo.com/wp-content/uploads/2014/11/3d-Background-Image-3d-Pictures.jpg" alt="pic4"/>
+<img src="http://www.ferraraitalia.it/wp-content/uploads/2015/11/freddo_-4-dic-400x300.jpg" alt="pic5"/>
+<img src="http://gallery.photo.net/photo/7421923-md.jpg" alt="pic6"/>
+<img src="http://gallery.photo.net/photo/11240591-md.jpg" alt="pic7"/>
+<img src="http://gallery.photo.net/photo/6732524-md.jpg" alt="pic8"/>
+<img src="http://gallery.photo.net/photo/10461393-md.jpg" alt="pic9"/>
+</div>
+</div>
+<div style="text-align:center"><a class="w-btn style_outlined size_large color_primary icon_none" href="https://www.offensive-security.com/testimonials-and-reviews/" target="_blank">
+<span class="w-btn-label">Посмотреть портфолио</span></a></div>
+</body>
+</html>
