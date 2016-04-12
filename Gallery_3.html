@@ -3,6 +3,8 @@
 <head>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="scriptSpiders.js"></script>
+<script type="text/javascript" src="jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="magnific-popup.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Галерея</title>
 
@@ -37,7 +39,7 @@
 }
 .scroll img:hover {
 box-shadow: 0px 0px 58px 13px #b0fae1;	
-transform:scale(1.25,1.25); z-index:10;
+transform:scale(1.1,1.1); z-index:10;
 }
 .scroll label {
  cursor: pointer;
@@ -76,6 +78,34 @@ left: 0; right: 0; color:#fff; z-index:-1; overflow:hidden}
 </head>
 <body style="margin:0; padding:0">
 <header style="padding:0"> <canvas id="spiders"></canvas></header>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.scroll').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+});
+</script>
 <div class="scroll">
 
 <input type="radio" id="0" name="raz" checked="checked"/>
@@ -87,15 +117,15 @@ left: 0; right: 0; color:#fff; z-index:-1; overflow:hidden}
 <label for="2"></label>
 
 <div>
-<a href="https://nnmclub.to"><img src="https://c1.staticflickr.com/5/4133/4945573963_9d45b7867e_b.jpg" alt="pic1"/></a>
-<a href="https://thepiratebay.cr"><img src="http://wallpapershome.com/images/pages/pic_h/5497.jpg" alt="pic2"/></a>
-<a href="https://flibusta.is"><img src="http://www.vmir.su/uploads/posts/1409063181_061.jpg" alt="pic3"/></a>
-<img src="http://www.silverstationvideo.com/wp-content/uploads/2014/11/3d-Background-Image-3d-Pictures.jpg" alt="pic4"/>
-<img src="http://www.ferraraitalia.it/wp-content/uploads/2015/11/freddo_-4-dic-400x300.jpg" alt="pic5"/>
-<img src="http://gallery.photo.net/photo/7421923-md.jpg" alt="pic6"/>
-<img src="http://gallery.photo.net/photo/11240591-md.jpg" alt="pic7"/>
-<img src="http://gallery.photo.net/photo/6732524-md.jpg" alt="pic8"/>
-<img src="http://gallery.photo.net/photo/10461393-md.jpg" alt="pic9"/>
+<a href="https://c1.staticflickr.com/5/4133/4945573963_9d45b7867e_b.jpg"><img src="https://c1.staticflickr.com/5/4133/4945573963_9d45b7867e_b.jpg" alt="pic1"/></a>
+<a href="http://wallpapershome.com/images/pages/pic_h/5497.jpg"><img src="http://wallpapershome.com/images/pages/pic_h/5497.jpg" alt="pic2"/></a>
+<a href="http://www.vmir.su/uploads/posts/1409063181_061.jpg"><img src="http://www.vmir.su/uploads/posts/1409063181_061.jpg" alt="pic3"/></a>
+<a href="http://www.silverstationvideo.com/wp-content/uploads/2014/11/3d-Background-Image-3d-Pictures.jpg"><img src="http://www.silverstationvideo.com/wp-content/uploads/2014/11/3d-Background-Image-3d-Pictures.jpg" alt="pic4"/></a>
+<a href="http://www.ferraraitalia.it/wp-content/uploads/2015/11/freddo_-4-dic-400x300.jpg"><img src="http://www.ferraraitalia.it/wp-content/uploads/2015/11/freddo_-4-dic-400x300.jpg" alt="pic5"/></a>
+<a href="http://gallery.photo.net/photo/7421923-md.jpg"><img src="http://gallery.photo.net/photo/7421923-md.jpg" alt="pic6"/></a>
+<a href="http://gallery.photo.net/photo/11240591-md.jpg"><img src="http://gallery.photo.net/photo/11240591-md.jpg" alt="pic7"/></a>
+<a href="http://gallery.photo.net/photo/6732524-md.jpg"><img src="http://gallery.photo.net/photo/6732524-md.jpg" alt="pic8"/></a>
+<a href="http://gallery.photo.net/photo/10461393-md.jpg"><img src="http://gallery.photo.net/photo/10461393-md.jpg" alt="pic9"/></a>
 </div>
 </div>
 <div style="text-align:center"><a class="w-btn style_outlined size_large color_primary icon_none" href="https://www.offensive-security.com/testimonials-and-reviews/" target="_blank">
