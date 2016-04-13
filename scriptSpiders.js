@@ -180,7 +180,7 @@ $( function() {
             if ( !_this.active ) return;
             ctx.beginPath();
             ctx.arc( _this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false );
-            ctx.fillStyle = 'rgba(100,50,200,' + _this.active + ')';
+            ctx.fillStyle = 'rgba(7,145,190,' + _this.active + ')';
             ctx.fill();
         };
     }
