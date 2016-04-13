@@ -123,13 +123,13 @@ $( function() {
             ctx.clearRect( 0, 0, width, height );
             for ( var i in points ) {
                 // detect points in range
-                if ( Math.abs( getDistance( target, points[ i ] ) ) < 12000 ) {
+                if ( Math.abs( getDistance( target, points[ i ] ) ) < 6000 ) {
                     points[ i ].active = 0.3;
                     points[ i ].circle.active = 0.6;
-                } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 40000 ) {
+                } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 20000 ) {
                     points[ i ].active = 0.1;
                     points[ i ].circle.active = 0.3;
-                } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 80000 ) {
+                } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 40000 ) {
                     points[ i ].active = 0.02;
                     points[ i ].circle.active = 0.1;
                 } else {
@@ -161,7 +161,7 @@ $( function() {
             ctx.beginPath();
             ctx.moveTo( p.x, p.y );
             ctx.lineTo( p.closest[ i ].x, p.closest[ i ].y);
-            ctx.strokeStyle = 'rgba(100,50,200,' + p.active + ')';
+            ctx.strokeStyle = 'rgba(9,146,255,' + p.active + ')';
 			ctx.stroke();
         }
     }
