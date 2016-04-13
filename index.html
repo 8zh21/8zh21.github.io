@@ -1,19 +1,241 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="scriptSpiders.js"></script>
 <script type="text/javascript" src="scrolltopcontrol.js"></script>
-<title>Персональное пространство</title>
+<script type="text/javascript" src="jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="magnific-popup.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Главная страница</title>
 <style>
 #topcontrol {position: fixed; bottom: 5px; right: 5px; opacity: 0.5; cursor: pointer;}
-#testscroll {content:" "; width:100%; height:2000px}
+.block1 { width:auto; height:auto; background-color:rgb(255,255,255); margin-left:-8px}
+.colour { color: rgb(0,58,81); width:200px; text-align:center}
+A { color: rgb(0,58,81);
+    text-decoration: none 
+   } 
+.search {
+   width: 310px; 
+   min-height: 35px;
+   margin-left:1600px;
+   position:absolute;
+   padding-top:10px 
+   }
+ p {
+    font-size: 120%;
+   }
+ big {
+    font-size: 150%;
+	color:#FFF
+   } 
+.knopa {
+	background: #ffbd12;
+	width:400px;
+	height: 180px;
+	padding: 0px 0 10px 0px;
+	margin-left: 165px;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	font-family: "Century Gothic";
+}
+.vse {
+position: absolute;
+	margin-left:-8px;
+	margin-top:1011px;
+	background-color:#ffbd12;
+	width: 1920px;
+	height:200px
+}
+.pole {
+position: absolute;
+	margin-left:0px;
+	margin-top:200px;
+	background-color:#ffffff;
+	width: 1920px;
+	height:200px
+}
+.slova {
+	background: #ffffff;
+	width:500px;
+	height: 650px;
+	padding: 10px 10px 10px 10px;
+	margin-left: 200px;
+	margin-top: 0px;
+	display: inline-block;
+	float: left;
+	font-family: "Century Gothic";
+}
+.fot {
+	background: #ffffff;
+	width:650px;
+	height: 650px;
+	padding: 10px 0 10px 10px;
+	margin-left: 1000px;
+	margin-top: -665px;
+	display: inline-block;
+	float: left;
+}
+ .scroll {
+ position: relative;
+ height: 20em;
+ padding: 0 4em;
+ line-height: 20em;
+}
+.scroll input {
+ display: none;
+}
+.scroll div {
+ height: 100%;
+ overflow: hidden;
+ white-space: nowrap;
+ word-wrap: normal;
+ font-size: 0;
+}
+
+.scroll img {
+ position: relative;
+ right: 0em;
+ width: 522px;
+ height: 80%;
+ transition: .5s;
+  margin-left: 35px;
+ margin-right: 35px;
+ display:inline-block;
+ vertical-align:middle
+}
+.scroll img:hover {
+box-shadow: 0px 0px 58px 1px #27BAED;	
+transform:scale(1.05,1.05); z-index:10; cursor: zoom-in;
+}
+.scroll label {
+ cursor: pointer;
+ font-weight: 600;
+ font-size: 6em;
+ }
+.scroll input:nth-of-type(1):checked ~ label:nth-of-type(2):after,
+.scroll input:nth-of-type(2):checked ~ label:nth-of-type(3):after {
+ content: "\3009";
+ position: absolute;
+ opacity: 0.5;
+ right: -0.3em;
+}
+.scroll input:nth-of-type(2):checked ~ label:nth-of-type(1):after,
+.scroll input:nth-of-type(3):checked ~ label:nth-of-type(2):after {
+ content: "\3008";
+ position: absolute;
+ opacity: 0.5;
+ left: -0.3em;
+}
+
+.scroll input:nth-of-type(2):checked ~ div img {right: 100%;}
+.scroll input:nth-of-type(3):checked ~ div img {right: 200%;}
+.w-btn {color: #03465C; box-shadow: 0 0 0 2px #03465C inset; position:relative; top:15px; text-decoration:none;
+padding: 10px 30px; border-radius: 5px; transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+font-weight: bold; text-transform: uppercase; font-family: "Open Sans", sans-serif;}
+.w-btn:hover {color:#fff}
+.w-btn::before {background-color: #03465C; border-radius: 5px; content: ''; height:0; position:absolute; transition: height 0.3s; top: 0;
+left: 0; right: 0; color:#fff; z-index:-1; overflow:hidden}
+.w-btn:hover::before {height:100%; color:#fff}
+#gallery {position: relative; top: 1200px}
 </style>
 </head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<a href="Gallery_3.html">Gallery</a>
+<div class="block1"> 
+<div style="height:100px; width:auto">
+<div style="margin-top: 0; position: absolute; margin-left:790px; padding-top:5px"><a href="http://portal.tpu.ru/ic"><img src="header/ик.png" width="90px" height="90px"/><span ></span></a></div>
+
+<div style="margin-top: 0; position: absolute; margin-left:910px"><a href="http://tpu.ru/"><img src="header/тпу.png" width="100px" height="100px"/></a></span></div> <div align="center"; style="margin-top: 0; position: absolute; left: 477px"></div> 
+
+<div style="margin-top: 0; position: absolute; margin-left:1030px; padding-top:5px"><a href="http://arm.tpu.ru"><img src="header/арм.png"width="90px" height="90px"/></a></div> 
+</div>
+
+<div style="height:100px; width:auto"><div class="colour" style="font-family:'Century Gothic'; font-size: 28px; margin-left:330px; margin-top:0px; position:absolute; padding-top:30px"><a href="общий файл.html" target="_self">ГЛАВНАЯ</a></div> 
+<div class="colour" style="font-family:'Century Gothic'; font-size: 28px; margin-left:860px; margin-top:0px; position:absolute; padding-top:30px"><a href="общий файл.html" target="_self">ГАЛЕРЕЯ</a></div>
+<div class="colour" style="font-family:'Century Gothic'; font-size: 28px; margin-left:1390px; margin-top:0px; position:absolute; padding-top:30px"><a href="общий файл.html" target="_self">КОНТАКТЫ</a></div></div>
+<div><img style="width:1920px; height:600px" src="5.gif" alt="Промышленный дизайн"/></div>
+<div style="width:1920px; height:45px; margin-top:90px; position:absolute; background-color:rgb(255,189,18)">
+	<form method="get" target="_blank" action="http://yandex.ru/sitesearch"><div class="search"><img src="header/иконка поиска.png" width="15px" height="15px"/><input placeholder="Поиск" name="text" type="text" /><input type="hidden" name="site" value="https://8zh21.github.io" />
+</div></form></div>
+</div>
+<div class="pole"><div class="slova">
+<p align="justify">Светлой майской ночью нас разбудил выстрел и отчаянный собачий визг. Выскочив на улицу, Сергей увидел, что его Жулик с мордой, залитой кровью, крутится на одном месте. В воздухе ещё не рассеялся запах пороха. Сергей упал возле ослепшей собаки и, обхватив её руками, заплакал.
+С Жуликом я был знаком уже два года - с тех пор, как подружился с его хозяином. Помню дождливую осеннюю ночь, когда к нашей лесной избушке подошёл медведь. Его, наверное, интересовала лошадь, закрытая в небольшой конюшне. Четыре собаки с визгом забились под нары, а Жулик сильным прыжком распахнул дверь и исчез.
+Схватив ружья, мы выскочили за собакой. Рядом с избой в кромешной тьме слышался яростный лай. Мы бросились туда, но лай стал быстро удаляться и вскоре затерялся в шуме дождя и реки...
+Спустя полчаса за дверью послышалось царапанье. Открыли - на пороге появился Жулик, мокрый, грязный. Он отряхнулся, окатив нас водой, молча постоял и улёгся у порога.
+Эта история повторялась раза три и каждый раз одинаково: собаки прятались в избушке, и только Жулик, заслышав приближение зверя, вылетал на улицу и гнал его прочь.
+</p></div>
+<div class="fot">
+<img src="Фото/5.png" width=100% height=100% align="justify" alt="мордашка">
+</div>
+</div>
+<div class="vse">
+<div class="knopa">
+<a href="вторые страницы/студенту2.html"><p><img src="вторые страницы/studentu.png" width="100" height="100" align="center" alt="студенту"></p>
+<big>студенту</big></a>
+</div>
+<div class="knopa"><a href="вторые страницы/преподавателю.html"><p><img src="вторые страницы/prepod.png" width="100" height="100" align="center" alt="преподавателю"></p>
+<big>преподавателю</big></a>
+</div>
+<div class="knopa"><a href="вторые страницы/работодателю.html"><p><img src="вторые страницы/rabotodat.png" width="100" height="100" align="center" alt="работодателю"></p>
+<big>работодателю</big></a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.scroll').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+});
+</script>
+<div id="gallery"><div class="scroll">
+
+<input type="radio" id="0" name="raz" checked="checked"/>
+<input type="radio" id="1" name="raz"/>
+<input type="radio" id="2" name="raz"/>
+
+<label for="0"></label>
+<label for="1"></label>
+<label for="2"></label>
+
+<div>
+<a href="https://c1.staticflickr.com/5/4133/4945573963_9d45b7867e_b.jpg"><img src="https://c1.staticflickr.com/5/4133/4945573963_9d45b7867e_b.jpg" alt="pic1"/></a>
+<a href="http://wallpapershome.com/images/pages/pic_h/5497.jpg"><img src="http://wallpapershome.com/images/pages/pic_h/5497.jpg" alt="pic2"/></a>
+<a href="http://www.vmir.su/uploads/posts/1409063181_061.jpg"><img src="http://www.vmir.su/uploads/posts/1409063181_061.jpg" alt="pic3"/></a>
+<a href="http://www.silverstationvideo.com/wp-content/uploads/2014/11/3d-Background-Image-3d-Pictures.jpg"><img src="http://www.silverstationvideo.com/wp-content/uploads/2014/11/3d-Background-Image-3d-Pictures.jpg" alt="pic4"/></a>
+<a href="http://www.ferraraitalia.it/wp-content/uploads/2015/11/freddo_-4-dic-400x300.jpg"><img src="http://www.ferraraitalia.it/wp-content/uploads/2015/11/freddo_-4-dic-400x300.jpg" alt="pic5"/></a>
+<a href="http://gallery.photo.net/photo/7421923-md.jpg"><img src="http://gallery.photo.net/photo/7421923-md.jpg" alt="pic6"/></a>
+<a href="http://gallery.photo.net/photo/11240591-md.jpg"><img src="http://gallery.photo.net/photo/11240591-md.jpg" alt="pic7"/></a>
+<a href="http://gallery.photo.net/photo/6732524-md.jpg"><img src="http://gallery.photo.net/photo/6732524-md.jpg" alt="pic8"/></a>
+<a href="http://gallery.photo.net/photo/10461393-md.jpg"><img src="http://gallery.photo.net/photo/10461393-md.jpg" alt="pic9"/></a>
+</div>
+</div>
+<div style="text-align:center"><a class="w-btn style_outlined size_large color_primary icon_none" href="https://www.offensive-security.com/testimonials-and-reviews/" target="_blank">
+<span class="w-btn-label">Посмотреть портфолио</span></a></div></div>
 <div id="testscroll"></div>
 </body>
 </html>
