@@ -4,7 +4,8 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="scrolltopcontrol.js"></script>
 <script type="text/javascript" src="jquery.magnific-popup.min.js"></script>
-<script type="text/javascript">
+<script>
+ $(document).ready(function(){
  $('a[href^="#"]').bind('click.smoothscroll',function (e) {
  e.preventDefault();
  
@@ -15,6 +16,7 @@ $('html, body').stop().animate({
  'scrollTop': $target.offset().top
  }, 500, 'swing', function () {
  window.location.hash = target;
+ });
  });
  });
 </script>
