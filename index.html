@@ -142,6 +142,20 @@ left: 0; right: 0; color:#fff; z-index:-1; overflow:hidden}
 </head>
 
 <body>
+<script type="text/javascript">
+ $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+ e.preventDefault();
+ 
+var target = this.hash,
+ $target = $(target);
+ 
+$('html, body').stop().animate({
+ 'scrollTop': $target.offset().top
+ }, 500, 'swing', function () {
+ window.location.hash = target;
+ });
+ });
+</script>
 <div class="block1"> 
 <div style="height:100px; width:auto">
 <div style="margin-top: 0; position: absolute; margin-left:790px; padding-top:5px"><a href="http://portal.tpu.ru/ic"><img src="header/ик.png" width="90px" height="90px"/><span ></span></a></div>
@@ -152,7 +166,7 @@ left: 0; right: 0; color:#fff; z-index:-1; overflow:hidden}
 </div>
 
 <div style="height:100px; width:auto"><div class="colour" style="font-family:'Century Gothic'; font-size: 28px; margin-left:330px; margin-top:0px; position:absolute; padding-top:30px"><a href="общий файл.html" target="_self">ГЛАВНАЯ</a></div> 
-<div class="colour" style="font-family:'Century Gothic'; font-size: 28px; margin-left:860px; margin-top:0px; position:absolute; padding-top:30px"><a href="общий файл.html" target="_self">ГАЛЕРЕЯ</a></div>
+<div class="colour" style="font-family:'Century Gothic'; font-size: 28px; margin-left:860px; margin-top:0px; position:absolute; padding-top:30px"><a href="#gallery" target="_self">ГАЛЕРЕЯ</a></div>
 <div class="colour" style="font-family:'Century Gothic'; font-size: 28px; margin-left:1390px; margin-top:0px; position:absolute; padding-top:30px"><a href="общий файл.html" target="_self">КОНТАКТЫ</a></div></div>
 <div><img style="width:1920px; height:600px" src="5.gif" alt="Промышленный дизайн"/></div>
 <div style="width:1920px; height:45px; margin-top:90px; position:absolute; background-color:rgb(255,189,18)">
