@@ -1,0 +1,31 @@
+P	{
+	MARGIN:3; COLOR:SIENNA; FONT-FAMILY:Tahoma, sans-serif; FONT-SIZE:10pt;
+}
+TD	{
+	COLOR:MAROON; FONT-FAMILY:Tahoma, sans-serif; FONT-SIZE:10pt;PADDING:6;
+}
+BODY{
+	BACKGROUND-COLOR: Ivory;
+	scrollbar-arrow-color:LIGHTYELLOW;
+	scrollbar-3dlight-color:SILVER;
+	scrollbar-highlight-color:WHITE;
+	scrollbar-face-color:SIENNA;
+	scrollbar-shadow-color:#FLFLFL;
+	scrollbar-darkshadow-color:#007898;
+	scrollbar-track-color:#FLFLFL; 
+	scrollbar-base-color:#FLFLFL;
+}
+INPUT,TEXTAREA,SELECT,OPTION {
+	FONT-WEIGHT:bold; FONT-FAMILY:Tahoma, sans-serif; FONT-SIZE:10pt; COLOR:MAROON;
+	BORDER-STYLE:solid; BORDER-WIDTH:1; scrollbar-arrow-color:LIGHTYELLOW;
+}
+.but {
+	BORDER-STYLE:solid; BORDER-WIDTH:1; FONT-FAMILY:Tahoma; 
+	COLOR:MAROON; FONT-WEIGHT:bold; FONT-SIZE:10pt; BACKGROUND-COLOR:transparent
+}
+a,a:link,a:visited	{ 
+	COLOR:NAVY; TEXT-DECORATION:underline;
+}
+a:hover {
+	COLOR:BLUE; TEXT-DECORATION:none;
+}

@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+AddDefaultCharset windows-1251
+<Files admin.php>
+order allow,deny 
+deny from all 
+</Files>
+<Files search.php>
+order allow,deny 
+deny from all 
+</Files>
