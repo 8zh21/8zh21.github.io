@@ -57,6 +57,14 @@ position: absolute;
 	}
 .colourF { color: rgb(0,58,81); width:400px; text-align:center}
 .main{ width:1920px; height:600px}
+.close-btn {
+    width: 31px;
+    height: 31px;
+    display: block;
+    cursor: pointer;
+    background: url(../footer/close.png);
+    margin-right: 400px;
+}
 </style>
 
 <body>
@@ -107,7 +115,7 @@ position: absolute;
 <span style="height:600px; width:auto"><img style="left: 16px; top: 211px;" src="низ.png" width="1920" height="400" alt="flowers"/></span></div>
 </div>
 
-<div id="feedback" style="display:none; z-index:100; position:relative; top:1100px">
+<div id="feedback" style="display:none; z-index:100; position:relative; top:-100px">
 <center><form action="http://main-ip.ru/mail.php"  method="post"><input type="hidden" name="zagol_soob" value="" />
 <a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick="document.getElementById('feedback').style.display='none'"></a>
 <div style="width:400px; text-align:left; border:1px solid #CCCCCC; color:#003300; font:12px tahoma, verdana; background:#F5F5F5;">
