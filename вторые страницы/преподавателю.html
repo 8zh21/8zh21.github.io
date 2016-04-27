@@ -59,6 +59,8 @@ position: absolute;
 	padding-top:30px;
 	padding-bottom:30px
 	}
+.colourF { color: rgb(0,58,81); width:400px; text-align:center}
+.main{ width:1920px; height:600px}
 </style>
 
 <body>
@@ -90,7 +92,54 @@ position: absolute;
 <div class="block"> <div style="margin-left:100px; position:absolute; margin-top:25px"><img src="наука.png" width="200px" height="200px" alt="Научная работа"/></div><div style="margin-left:450px; margin-top:50px; position:absolute; width:600px; font-family:'Century Gothic'; font-size: 16px; color: rgb(0,58,81)""><p><h2>Научная работа</h2>В этом разделе Вы можете найти информацию о моих научных работах. <br />Здесь содержатся сведения о статьях, публикациях, участиях в различного рода конференциях и грантах. <br /><a href="">Читать далее...</a></p></div></div>
 <div class="block"> <div style="margin-left:100px; position:absolute; margin-top:25px;"><img src="актив.png" width="200px" height="200px" alt="Актив"/></div><div style="margin-left:450px; margin-top:50px; position:absolute; width:600px;  font-family:'Century Gothic'; font-size: 16px; color: rgb(0,58,81)"><p><h2>Актив</h2>В данном разделе содержится информация об активном участии в общественной жизни университета. <br />Также здесь Вы найдете информацию о различных мероприятих, в которых я участвовала или которые организовывала.<br /><a href="">Читать далее...</a></p></div></div>
 </div>
-<div style="text-align:center">footer</div>
+<div><div id="footer" style="position:absolute; top:2500px">
+<div class="main">
+<div style="height:100px; width:auto"><div class="colourF" style="font-family:'Century Gothic'; font-size: 28px; margin-left:150px; margin-top:0px; position:absolute; padding-top:30px"><a>ССЫЛКИ</a></div> 
+<div class="colourF" style="font-family:'Century Gothic'; font-size: 28px; margin-left:740px; margin-top:0px; position:absolute; padding-top:30px"><a>ОБРАТНАЯ СВЯЗЬ</a></div>
+<div class="colourF" style="font-family:'Century Gothic'; font-size: 28px; margin-left:1340px; margin-top:0px; position:absolute; padding-top:30px"><a>КОНТАКТЫ</a></div></div>
+
+<div style="height:100px; width:200px; float:left; margin-left:270px">
+<a href="https://vk.com"><img src="вк.png"" alt="VK" width="55" height="40" style="margin-right:10px"></a><a href="https://www.instagram.com/"><img src="инста.png" alt="VK" width="40" height="40" style="margin-right:10px"></a> <a href="https://ru-ru.facebook.com/"><img src="фейсбук.png" alt="Facebook" width="40" height="40"></a>
+</div>
+<div style="height:100px; width:300px; float:left; margin-left:320px"><a href="javascript:void(0)" onclick = "document.getElementById('feedback').style.display='block'"><img src="обр связь.jpg" alt="send feedback" width="300" height="40" style="margin-right:10px"></a>
+</div>
+<div style="height:100px; width:300px; float:left; margin-left:300px"><a href="mailto:8g21@mail.ru"><div style="font-family:'Century Gothic'; font-size: 28px;color: rgb(0,58,81)"><img src="письмо.png" alt="" width="55" hspace="10" height="40"  />8g21@mail.ru</div>
+</a><div style="margin-top:10px; font-family:'Century Gothic'; font-size: 28px;color: rgb(0,58,81); text-align:center" ><img src="трубка.png" alt="" width="55" hspace="5" height="45" style="margin-left:10px"> 8-323-758-15-14</div>
+</a></div>
+<div style="height:100px; width:300px; margin-left:100px">
+</div>
+<span style="height:600px; width:auto"><img style="left: 16px; top: 211px;" src="низ.png" width="1920" height="400" alt="flowers"/></span></div>
+</div>
+
+<div id="feedback" style="display:none; z-index:100; position:relative; top:1100px">
+<center><form action="http://main-ip.ru/mail.php"  method="post"><input type="hidden" name="zagol_soob" value="" />
+<a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick="document.getElementById('feedback').style.display='none'"></a>
+<div style="width:400px; text-align:left; border:1px solid #CCCCCC; color:#003300; font:12px tahoma, verdana; background:#F5F5F5;">
+<div style="text-align:center; background:#FBBB07; border:1px solid #F5F5F5; color:#ffffff; padding:5px 5px 5px 5px;">ОБРАТНАЯ СВЯЗЬ</div>
+<div style="border-top:solid 1px #CCCCCC; padding:8px 20px 0px 20px;">Ваше имя</div>
+<div style="padding:1px 20px 0px 20px;">
+<input name="name" type="text" style="width:358px; height:20px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;" maxlength="50" />
+</div>
+<div style="padding:8px 20px 0px 20px;">Ваш e-mail</div>
+<div style="padding:1px 20px 0px 20px;">
+<input name="e_mail" type="text" style="width:358px; height:20px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;" maxlength="50" />
+</div>
+<div style="padding:8px 20px 0px 20px;">Ваше предложение</div>
+<div style="padding:1px 20px 0px 20px;">
+<textarea name="text" style="width:358px; height:50px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;"> </textarea>
+</div>
+<div style="overflow:auto; width:100%;">
+<div style="float:left; padding:10px 0px 10px 20px;">Число на картинке<br />
+<input name="captcha" type="text" style="width:220px; height:20px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;" maxlength="12" />
+</div>
+<div style="float:right; padding:10px 20px 10px 0px;">
+<a href="http://main-ip.ru/"><img border="0" src="http://main-ip.ru/captcha.php" /></a>
+</div>
+</div>
+<div style="padding:5px 20px 15px 20px; text-align:center;">
+<input type="submit" value="Отправить" style="cursor:pointer; width:200px; height:35px; font:15px tahoma;" />
+</div>
+</div></form></center><!-- 17:15, 21.04.2016 --></div></div>
 </div>
 </body>
 </html>
